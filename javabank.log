@@ -1,0 +1,54 @@
+2019-06-27 12:56:52,870 DEBUG [main] o.s.c.a.AnnotationConfigApplicationContext [AbstractApplicationContext.java:594] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1563da5
+2019-06-27 12:56:52,907 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-06-27 12:56:53,324 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-06-27 12:56:53,330 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-06-27 12:56:53,331 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2019-06-27 12:56:53,345 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-06-27 12:56:53,349 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-06-27 12:56:53,605 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'bankConfig'
+2019-06-27 12:56:53,608 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-27 12:56:53,609 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2019-06-27 12:56:53,668 DEBUG [main] o.s.a.a.a.ReflectiveAspectJAdvisorFactory [ReflectiveAspectJAdvisorFactory.java:243] Found AspectJ method: public void net.java_school.commons.TestLogger.depositLog(org.aspectj.lang.JoinPoint)
+2019-06-27 12:56:53,671 DEBUG [main] o.s.a.a.a.ReflectiveAspectJAdvisorFactory [ReflectiveAspectJAdvisorFactory.java:243] Found AspectJ method: public void net.java_school.commons.TestLogger.withdrawLog(java.lang.String,long)
+2019-06-27 12:56:53,933 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'transactionAttributeSource'
+2019-06-27 12:56:53,970 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'transactionInterceptor'
+2019-06-27 12:56:53,993 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'testLogger'
+2019-06-27 12:56:54,021 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'dataSource'
+2019-06-27 12:56:54,383 DEBUG [main] o.s.j.d.DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2019-06-27 12:56:54,434 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'transactionManager'
+2019-06-27 12:56:54,494 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'shinhanBankDao'
+2019-06-27 12:56:54,615 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'shinhanBank'
+2019-06-27 12:56:54,656 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'bankUi'
+2019-06-27 12:57:38,325 DEBUG [main] o.s.c.a.AnnotationConfigApplicationContext [AbstractApplicationContext.java:594] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1563da5
+2019-06-27 12:57:38,367 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-06-27 12:57:38,818 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-06-27 12:57:38,824 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-06-27 12:57:38,827 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2019-06-27 12:57:38,838 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-06-27 12:57:38,842 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-06-27 12:57:39,056 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'bankConfig'
+2019-06-27 12:57:39,060 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-27 12:57:39,061 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2019-06-27 12:57:39,135 DEBUG [main] o.s.a.a.a.ReflectiveAspectJAdvisorFactory [ReflectiveAspectJAdvisorFactory.java:243] Found AspectJ method: public void net.java_school.commons.TestLogger.depositLog(org.aspectj.lang.JoinPoint)
+2019-06-27 12:57:39,140 DEBUG [main] o.s.a.a.a.ReflectiveAspectJAdvisorFactory [ReflectiveAspectJAdvisorFactory.java:243] Found AspectJ method: public void net.java_school.commons.TestLogger.withdrawLog(java.lang.String,long)
+2019-06-27 12:57:39,427 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'transactionAttributeSource'
+2019-06-27 12:57:39,461 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'transactionInterceptor'
+2019-06-27 12:57:39,487 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'testLogger'
+2019-06-27 12:57:39,531 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'dataSource'
+2019-06-27 12:57:39,844 DEBUG [main] o.s.j.d.DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2019-06-27 12:57:39,898 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'transactionManager'
+2019-06-27 12:57:39,972 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'shinhanBankDao'
+2019-06-27 12:57:40,098 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'shinhanBank'
+2019-06-27 12:57:40,159 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:213] Creating shared instance of singleton bean 'bankUi'
+2019-06-27 12:57:44,570 DEBUG [main] o.s.j.c.JdbcTemplate [JdbcTemplate.java:426] Executing SQL query [SELECT accountNo,owner,balance,kind FROM bankaccount ORDER BY accountNo DESC]
+2019-06-27 12:57:44,579 DEBUG [main] o.s.j.d.DataSourceUtils [DataSourceUtils.java:114] Fetching JDBC Connection from DataSource
+2019-06-27 12:57:44,580 DEBUG [main] o.s.j.d.DriverManagerDataSource [DriverManagerDataSource.java:143] Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@127.0.0.1:1521:XE]
+2019-06-27 12:58:02,084 DEBUG [main] o.s.j.c.JdbcTemplate [JdbcTemplate.java:859] Executing prepared SQL update
+2019-06-27 12:58:02,104 DEBUG [main] o.s.j.c.JdbcTemplate [JdbcTemplate.java:608] Executing prepared SQL statement [UPDATE bankaccount SET balance = balance + ? WHERE accountno = ?]
+2019-06-27 12:58:02,107 DEBUG [main] o.s.j.d.DataSourceUtils [DataSourceUtils.java:114] Fetching JDBC Connection from DataSource
+2019-06-27 12:58:02,110 DEBUG [main] o.s.j.d.DriverManagerDataSource [DriverManagerDataSource.java:143] Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@127.0.0.1:1521:XE]
+2019-06-27 12:58:02,308 DEBUG [main] n.j.c.TestLogger [TestLogger.java:19] deposit|100|500000
+2019-06-27 12:58:03,702 DEBUG [main] o.s.j.c.JdbcTemplate [JdbcTemplate.java:426] Executing SQL query [SELECT accountNo,owner,balance,kind FROM bankaccount ORDER BY accountNo DESC]
+2019-06-27 12:58:03,702 DEBUG [main] o.s.j.d.DataSourceUtils [DataSourceUtils.java:114] Fetching JDBC Connection from DataSource
+2019-06-27 12:58:03,703 DEBUG [main] o.s.j.d.DriverManagerDataSource [DriverManagerDataSource.java:143] Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@127.0.0.1:1521:XE]
+2019-06-27 12:58:14,453 DEBUG [main] o.s.c.a.AnnotationConfigApplicationContext [AbstractApplicationContext.java:1002] Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1563da5, started on Thu Jun 27 12:57:38 KST 2019
