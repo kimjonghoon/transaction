@@ -6,7 +6,6 @@ import java.io.PrintStream;
 import java.io.InputStreamReader;
 import java.util.List;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class BankUi {

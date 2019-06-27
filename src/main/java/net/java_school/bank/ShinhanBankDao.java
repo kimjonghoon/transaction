@@ -13,8 +13,8 @@ public class ShinhanBankDao extends NamedParameterJdbcDaoSupport implements Bank
 
 	private static final String INSERT_ACCOUNT = 
 			"INSERT INTO " +
-					"bankaccount (accountno, owner, kind) " +
-					"VALUES (:accountNo, :name, :kind)";
+					"bankaccount (accountno, owner, balance, kind) " +
+					"VALUES (:accountNo, :name, 0, :kind)";
 
 	@Override
 	public void insertAccount(String accountNo, String name, String kind) {
