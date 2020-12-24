@@ -1,9 +1,8 @@
 package net.java_school.bank;
 
-import java.io.Serializable;
 import java.util.List;
 
-public interface Bank extends Serializable {
+public interface Bank {
 
 	public void setDao(BankDao dao);
 
@@ -15,11 +14,11 @@ public interface Bank extends Serializable {
 
 	public List<Account> getAccounts();
 
-	public void deposit(String accountNo, long amount);
+	public void deposit(String accountNo, double amount);
 
-	public void withdraw(String accountNo, long amount);
+	public void withdraw(String accountNo, double amount);
 
-	public void transfer(String from, String to, long amount);
+	public void transfer(String from, String to, double amount);
 
 	public List<Transaction> getTransactions(String accountNo); 
 

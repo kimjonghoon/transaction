@@ -6,9 +6,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 @Transactional(propagation=Propagation.SUPPORTS)
-public class ShinhanBank implements Bank {
-
-	private static final long serialVersionUID = -1317940306920472056L;
+public class MyBank implements Bank {
 
 	private BankDao dao;
 
@@ -36,18 +34,18 @@ public class ShinhanBank implements Bank {
 	}
 
 	@Override
-	public void deposit(String accountNo, long amount) {
+	public void deposit(String accountNo, double amount) {
 		dao.deposit(accountNo, amount);
 	}
 
 	@Override
-	public void withdraw(String accountNo, long amount) {
+	public void withdraw(String accountNo, double amount) {
 		dao.withdraw(accountNo, amount);
 	}
 
 	@Override
 	@Transactional(propagation=Propagation.REQUIRED)
-	public void transfer(String from, String to, long amount) {
+	public void transfer(String from, String to, double amount) {
 		int check = dao.withdraw(from, amount);
 		if (check < 1) {
 			throw new RuntimeException("Withdraw Failed!");

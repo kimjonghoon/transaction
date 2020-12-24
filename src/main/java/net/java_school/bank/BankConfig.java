@@ -38,23 +38,23 @@ public class BankConfig {
 	}
 
 	@Bean
-	public BankDao shinhanBankDao() {
-		ShinhanBankDao bankDao = new ShinhanBankDao();
+	public BankDao myBankDao() {
+		MyBankDao bankDao = new MyBankDao();
 		bankDao.setDataSource(dataSource());
 		return bankDao;
 	}
 
 	@Bean
-	public Bank shinhanBank() {
-		Bank bank = new ShinhanBank();
-		bank.setDao(shinhanBankDao());
+	public Bank myBank() {
+		Bank bank = new MyBank();
+		bank.setDao(myBankDao());
 		return bank;
 	}
 
 	@Bean
 	public BankUi bankUi() {
 		BankUi ui = new BankUi();
-		ui.setBank(shinhanBank());
+		ui.setBank(myBank());
 		ui.setStream(System.out);
 		return ui;
 	}

@@ -9,7 +9,7 @@ import java.util.List;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcDaoSupport;
 
-public class ShinhanBankDao extends NamedParameterJdbcDaoSupport implements BankDao {
+public class MyBankDao extends NamedParameterJdbcDaoSupport implements BankDao {
 
 	private static final String INSERT_ACCOUNT = 
 			"INSERT INTO " +
@@ -44,7 +44,7 @@ public class ShinhanBankDao extends NamedParameterJdbcDaoSupport implements Bank
 						Account account = new Account();
 						account.setAccountNo(rs.getString("accountNo"));
 						account.setName(rs.getString("owner"));
-						account.setBalance(rs.getLong("balance"));
+						account.setBalance(rs.getDouble("balance"));
 						account.setKind(rs.getString("kind"));
 
 						return account;
@@ -73,7 +73,7 @@ public class ShinhanBankDao extends NamedParameterJdbcDaoSupport implements Bank
 
 			String accountNo = rs.getString("accountNo");
 			String name = rs.getString("owner");
-			long balance = rs.getLong("balance");
+			double balance = rs.getDouble("balance");
 			String kind = rs.getString("kind");
 
 			Account account = new Account();
@@ -103,7 +103,7 @@ public class ShinhanBankDao extends NamedParameterJdbcDaoSupport implements Bank
 					"WHERE accountno = :accountNo";
 
 	@Override
-	public int deposit(String accountNo, long amount) {
+	public int deposit(String accountNo, double amount) {
 		Map<String, Object> params = new HashMap<String, Object>();
 		params.put("amount", amount);
 		params.put("accountNo", accountNo);
@@ -117,7 +117,7 @@ public class ShinhanBankDao extends NamedParameterJdbcDaoSupport implements Bank
 					"WHERE accountno = :accountNo";
 
 	@Override
-	public int withdraw(String accountNo, long amount) {
+	public int withdraw(String accountNo, double amount) {
 		Map<String, Object> params = new HashMap<String, Object>();
 		params.put("amount", amount);
 		params.put("accountNo", accountNo);
@@ -147,8 +147,8 @@ public class ShinhanBankDao extends NamedParameterJdbcDaoSupport implements Bank
 			String date = Account.DATE_FORMAT.format(rs.getTimestamp("transactionDate"));
 			String time = Account.TIME_FORMAT.format(rs.getTimestamp("transactionDate"));
 			String kind = rs.getString("kind");
-			long amount = rs.getLong("amount");
-			long balance = rs.getLong("balance");
+			double amount = rs.getDouble("amount");
+			double balance = rs.getDouble("balance");
 
 			Transaction transaction = new Transaction();
 			transaction.setTransactionDate(date);

@@ -12,9 +12,9 @@ public interface BankDao {
 
 	public List<Account> selectAllAccounts();
 
-	public int deposit(String accountNo, long amount);
+	public int deposit(String accountNo, double amount);
 
-	public int withdraw(String accountNo, long amount);
+	public int withdraw(String accountNo, double amount);
 
 	public List<Transaction> selectAllTransactions(String accountNo);
 

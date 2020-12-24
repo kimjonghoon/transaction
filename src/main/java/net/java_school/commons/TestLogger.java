@@ -14,13 +14,13 @@ public class TestLogger {
 	public void depositLog(JoinPoint point) {
 		Object[] a = point.getArgs();
 		String accountNo = (String) a[0];
-		Long amount = (Long) a[1];
+		double amount = (double) a[1];
 		String methodName = point.getSignature().getName();
 		logger.debug("{}|{}|{}", methodName, accountNo, amount);
 	}
 
 	@AfterReturning("execution(* withdraw(..)) && args(accountNo, amount)")
-	public void withdrawLog(String accountNo, long amount) {
+	public void withdrawLog(String accountNo, double amount) {
 		logger.debug("WITHDRAW|{}|{}", accountNo, amount);
 	}
 
