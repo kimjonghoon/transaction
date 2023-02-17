@@ -2,10 +2,8 @@ package net.java_school.bank;
 
 import java.util.List;
 
-import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-@Transactional(propagation=Propagation.SUPPORTS)
 public class MyBank implements Bank {
 
 	private BankDao dao;
@@ -34,26 +32,22 @@ public class MyBank implements Bank {
 	}
 
 	@Override
-	public void deposit(String accountNo, double amount) {
-		dao.deposit(accountNo, amount);
+	public int deposit(String accountNo, double amount) {
+		return dao.deposit(accountNo, amount);
 	}
 
 	@Override
-	public void withdraw(String accountNo, double amount) {
-		dao.withdraw(accountNo, amount);
+	public int withdraw(String accountNo, double amount) {
+		return dao.withdraw(accountNo, amount);
 	}
-
+	
 	@Override
-	@Transactional(propagation=Propagation.REQUIRED)
+	@Transactional
 	public void transfer(String from, String to, double amount) {
 		int check = dao.withdraw(from, amount);
-		if (check < 1) {
-			throw new RuntimeException("Withdraw Failed!");
-		}
+		if (check < 1) throw new RuntimeException("Withdraw fail!");
 		check = dao.deposit(to, amount);
-		if (check < 1) {
-			throw new RuntimeException("Deposit Failed!");
-		}
+		if (check < 1) throw new RuntimeException("Deposit fail!");
 	}
 
 	@Override

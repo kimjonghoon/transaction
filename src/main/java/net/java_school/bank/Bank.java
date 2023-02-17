@@ -14,9 +14,9 @@ public interface Bank {
 
 	public List<Account> getAccounts();
 
-	public void deposit(String accountNo, double amount);
+	public int deposit(String accountNo, double amount);
 
-	public void withdraw(String accountNo, double amount);
+	public int withdraw(String accountNo, double amount);
 
 	public void transfer(String from, String to, double amount);
 

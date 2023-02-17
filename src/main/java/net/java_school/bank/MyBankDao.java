@@ -122,7 +122,7 @@ public class MyBankDao extends NamedParameterJdbcDaoSupport implements BankDao {
 		params.put("amount", amount);
 		params.put("accountNo", accountNo);
 
-		return getNamedParameterJdbcTemplate().update(WITHDRAW, params);        
+		return getNamedParameterJdbcTemplate().update(WITHDRAW, params);
 	}
 
 	private static final String SELECT_ALL_TRANSACTIONS = 
