@@ -18,10 +18,19 @@ public class TestLogger {
 		String methodName = point.getSignature().getName();
 		logger.debug("{}|{}|{}", methodName, accountNo, amount);
 	}
-
-	@AfterReturning("execution(* withdraw(..)) && args(accountNo, amount)")
-	public void withdrawLog(String accountNo, double amount) {
-		logger.debug("WITHDRAW|{}|{}", accountNo, amount);
+	/*
+	   @AfterReturning("execution(* withdraw(..)) && args(accountNo, amount)")
+	   public void withdrawLog(String accountNo, double amount) {
+	   logger.debug("WITHDRAW|{}|{}", accountNo, amount);
+	   }
+	   */
+	@AfterReturning("execution(* withdraw(..))")
+	public void withdrawLog(JoinPoint point) {
+		Object[] a = point.getArgs();
+		String accountNo = (String) a[0];
+		Double amount = (Double) a[1];
+		String typeName = point.getSignature().getDeclaringTypeName();
+		String methodName = point.getSignature().getName();
+		logger.debug("{}.{}| AccountNo: {}, Amount: {}", typeName, methodName, accountNo, amount);
 	}
-
 }

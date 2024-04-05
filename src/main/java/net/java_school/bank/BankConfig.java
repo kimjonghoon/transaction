@@ -38,23 +38,23 @@ public class BankConfig {
 	}
 
 	@Bean
-	public BankDao myBankDao() {
+	public BankDao bankDao() {
 		MyBankDao bankDao = new MyBankDao();
 		bankDao.setDataSource(dataSource());
 		return bankDao;
 	}
 
 	@Bean
-	public Bank myBank() {
+	public Bank bank() {
 		Bank bank = new MyBank();
-		bank.setDao(myBankDao());
+		bank.setDao(bankDao());
 		return bank;
 	}
 
 	@Bean
 	public BankUi bankUi() {
 		BankUi ui = new BankUi();
-		ui.setBank(myBank());
+		ui.setBank(bank());
 		ui.setStream(System.out);
 		return ui;
 	}
