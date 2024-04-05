@@ -44,10 +44,14 @@ public class MyBank implements Bank {
 	@Override
 	@Transactional
 	public void transfer(String from, String to, double amount) {
-		int check = dao.withdraw(from, amount);
-		if (check < 1) throw new RuntimeException("Withdraw fail!");
-		check = dao.deposit(to, amount);
-		if (check < 1) throw new RuntimeException("Deposit fail!");
+		try {
+			int check = dao.withdraw(from, amount);
+			if (check < 1) throw new RuntimeException("Withdraw fail!");
+			check = dao.deposit(to, amount);
+			if (check < 1) throw new RuntimeException("Deposit fail!");
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	@Override
